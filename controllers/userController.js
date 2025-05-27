@@ -6,7 +6,7 @@ import cloudinary from "../liv/cloudinary.js";
 //  Sign up a new user
 
 export const signup = async (req, res) => {
-  const { email, fullName, password, ProfilePic, bio } = req.body;
+  const { email, fullName, password, bio } = req.body;
   try {
     // Check if user already exists
     if (!email || !fullName || !password || !bio) {
